@@ -15,8 +15,12 @@ class MyApp extends StatelessWidget {
       // home: Image.asset('asj.png')
       // home: SizedBox(),
       // home: Container(width: 50, height: 50, color : Colors.black),
-      home: Center(
-        child: Container(width: 50, height: 50, color : Colors.black),
+      home: Scaffold(
+        appBar: AppBar(),
+        body: Container(
+          child: Icon(Icons.star),
+        ),
+        bottomNavigationBar: BottomAppBar(),
       ),
     );
   }
