@@ -17,8 +17,14 @@ class MyApp extends StatelessWidget {
       // home: Container(width: 50, height: 50, color : Colors.black),
       home: Scaffold(
         appBar: AppBar(),
-        body: Container(
-          child: Icon(Icons.star),
+        body: Row(
+          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Icon(Icons.star),
+            Icon(Icons.star),
+            Icon(Icons.star),
+          ],
         ),
         bottomNavigationBar: BottomAppBar(),
       ),
