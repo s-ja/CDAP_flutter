@@ -10,23 +10,28 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      // home: Text('Hello World')
-      // home: Icon(Icons.star)
-      // home: Image.asset('asj.png')
-      // home: SizedBox(),
-      // home: Container(width: 50, height: 50, color : Colors.black),
       home: Scaffold(
-        appBar: AppBar(),
-        body: Row(
-          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(Icons.star),
-            Icon(Icons.star),
-            Icon(Icons.star),
-          ],
+        appBar: AppBar(
+          title: Text('title'),
+          backgroundColor: Colors.teal,
+          foregroundColor: Colors.tealAccent,
+          elevation : 10,
+          shadowColor: Colors.black,
         ),
-        bottomNavigationBar: BottomAppBar(),
+        body: Text('body'),
+        bottomNavigationBar: Container(
+          color: Colors.black12,
+          height: 50,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              Icon(Icons.phone),
+              Icon(Icons.message),
+              Icon(Icons.contact_page),
+            ],
+          ),
+        )
       ),
     );
   }
