@@ -19,17 +19,17 @@ class MyApp extends StatelessWidget {
           shadowColor: Colors.black,
         ),
         body: Text('body'),
-        bottomNavigationBar: Container(
-          color: Colors.black12,
-          height: 50,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page),
-            ],
+        bottomNavigationBar: BottomAppBar(
+          child: SizedBox(
+            height: 70,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Icon(Icons.phone),
+                Icon(Icons.message),
+                Icon(Icons.contact_page),
+              ],
+            ),
           ),
         )
       ),
