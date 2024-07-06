@@ -18,20 +18,21 @@ class MyApp extends StatelessWidget {
           elevation : 10,
           shadowColor: Colors.black,
         ),
-        body: Text('body'),
-        bottomNavigationBar: BottomAppBar(
-          child: SizedBox(
-            height: 70,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [
-                Icon(Icons.phone),
-                Icon(Icons.message),
-                Icon(Icons.contact_page),
-              ],
+        body: Align(
+          alignment: Alignment.topCenter,
+          child: Container(
+            width: double.infinity,
+            height: 150,
+            margin: EdgeInsets.fromLTRB(0, 0, 0, 30),
+            padding: EdgeInsets.all(20),
+            decoration: BoxDecoration(
+              color: Colors.blue,
+              border: Border.all(color: Colors.black)
             ),
+            child: Text('text'),
+
           ),
-        )
+        ),
       ),
     );
   }
